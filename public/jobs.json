@@ -8,7 +8,7 @@
       "maxPrice": "30",
       "salaryType": "Yearly",
       "jobLocation": "Brussels",
-      "postingDate": "2023-11-03",
+      "postingDate": "2023-11-08",
       "experienceLevel": "Any experience",
       "employmentType": "Full-time",
       "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
@@ -84,7 +84,7 @@
       "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
     },
     {
-      "id": 1,
+      "id": 7,
       "companyName": "Linear company",
       "jobTitle": "Software Engineer",
       "companyLogo": "/images/Linear.png",
@@ -98,7 +98,7 @@
       "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
     },
     {
-      "id": 2,
+      "id": 8,
       "companyName": "Notion",
       "jobTitle": "Web Developer",
       "companyLogo": "/images/Notion.png",
@@ -112,7 +112,7 @@
       "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
     },
     {
-      "id": 3,
+      "id": 9,
       "companyName": "Spline studio",
       "jobTitle": "Data Scientist",
       "companyLogo": "/images/Spline.png",
@@ -126,7 +126,7 @@
       "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
     },
     {
-      "id": 4,
+      "id": 10,
       "companyName": "Raycast corp",
       "jobTitle": "UI/UX Designer",
       "companyLogo": "/images/Raycast.png",
@@ -140,13 +140,13 @@
       "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
     },
     {
-      "id": 5,
+      "id": 11,
       "companyName": "Loom",
       "jobTitle": "Frontend Developer",
       "companyLogo": "/images/Loom.png",
       "minPrice": "50",
       "maxPrice": "75",
-      "salaryType": "Yearly",
+      "salaryType": "Monthly",
       "jobLocation": "London",
       "postingDate": "2023-10-28",
       "experienceLevel": "Intership",
@@ -154,7 +154,7 @@
       "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
     },
     {
-      "id": 6,
+      "id": 12,
       "companyName": "Trainline group",
       "jobTitle": "DevOps Engineer",
       "companyLogo": "/images/Trainline.png",

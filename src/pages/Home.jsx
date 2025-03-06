@@ -5,6 +5,9 @@ import Jobs from './Jobs'
 import Sidebar from '../sidebar/Sidebar'
 
 const Home = () => {
+  const ab = () => {
+    console.log("all good here")
+}
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [jobs, setJobs] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -26,7 +29,6 @@ const Home = () => {
 
   // filter jobs by title
   const filteredItems = jobs.filter((job) => job.jobTitle.toLowerCase().indexOf(query.toLowerCase()) !== -1)
-  console.log(filteredItems)
 
   // ----- Radio Filtering -----
   const handleChange = (event) => {
@@ -36,6 +38,7 @@ const Home = () => {
   // ----- button based filtering -----
   const handleClick = (event) => {
     setSelectedCategory(event.target.value)
+    console.log(event.target.value)
   }
 
   // calculate the index range
@@ -62,7 +65,6 @@ const Home = () => {
   // main function
   const filteredData = (jobs, selected, query) => {
     let filteredJobs = jobs;
-    console.log(filteredJobs)
 
     // filtering inputs items
     if(query){
@@ -71,15 +73,15 @@ const Home = () => {
 
     // category filtering
     if(selected){
-      filteredJobs = filteredJobs.filter(({jobLocation, maxPrice, salaryType, employmentType}) => {
+      filteredJobs = filteredJobs.filter(({jobLocation, maxPrice, salaryType, employmentType, postingDate}) => {
         return(
         jobLocation.toLowerCase() === selected.toLowerCase()||
         parseInt(maxPrice) <= parseInt(selected)||
+        postingDate >= selected ||
         salaryType.toLowerCase() === selected.toLowerCase()||
         employmentType.toLowerCase() === selected.toLowerCase()
         )
       });
-      console.log(filteredJobs)
     }
 
     // slice the data based on current page
