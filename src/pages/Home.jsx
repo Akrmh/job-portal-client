@@ -5,9 +5,7 @@ import Jobs from './Jobs'
 import Sidebar from '../sidebar/Sidebar'
 
 const Home = () => {
-  const ab = () => {
-    console.log("all good here")
-}
+
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [jobs, setJobs] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -73,13 +71,17 @@ const Home = () => {
 
     // category filtering
     if(selected){
-      filteredJobs = filteredJobs.filter(({jobLocation, maxPrice, salaryType, employmentType, postingDate}) => {
+      filteredJobs = filteredJobs.filter(({jobLocation, maxPrice, salaryType, employmentType,
+         postingDate, experienceLevel}) => {
         return(
         jobLocation.toLowerCase() === selected.toLowerCase()||
         parseInt(maxPrice) <= parseInt(selected)||
-        postingDate >= selected ||
         salaryType.toLowerCase() === selected.toLowerCase()||
-        employmentType.toLowerCase() === selected.toLowerCase()
+        experienceLevel.toLowerCase() === selected.toLowerCase()||
+        employmentType.toLowerCase() === selected.toLowerCase() ||
+        postingDate >= selected 
+
+
         )
       });
     }

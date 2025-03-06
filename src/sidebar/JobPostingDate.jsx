@@ -5,13 +5,13 @@ const JobPostingDate = ({handleChange}) => {
   const now = new Date();
   const twentyFourHoursAgo = new Date(now - 24 * 60 * 60 * 1000);
   const sevenDaysAgo = new Date(now - 7 * 24 * 60 * 60 * 1000);
-  const thirtyDaysAgo = new Date(now - 7 * 24 * 60 * 60 * 1000);
+  const thirtyDaysAgo = new Date(now - 30 * 24 * 60 * 60 * 1000);
 
   // convert date to string
   const twentyFourHoursAgoDate = twentyFourHoursAgo.toISOString().slice(0, 10)
   const sevenDaysAgoDate = sevenDaysAgo.toISOString().slice(0, 10)
   const thirtyDaysAgoDate = thirtyDaysAgo.toISOString().slice(0, 10)
-
+console.log(twentyFourHoursAgoDate)
 
   return (
     <div>
