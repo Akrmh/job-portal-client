@@ -9,17 +9,22 @@ const CreateJob = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     data.skills = selectedOption;
     // console.log(data);
-    fetch("http://localhost:3000/all-jops",{
+    fetch("http://localhost:3000/post-job",{
       method : "POST",
       headers : {"content-type" : "application/json"},
       body : JSON.stringify(data)
     }).then( res => res.json()).then((result)=>{
       console.log(result)
+      if(result.acknowledged === true){
+        alert("Job Posted Successfully!!!")
+      }
+      reset()
     })
 
   };
